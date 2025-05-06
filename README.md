@@ -18,9 +18,6 @@ A Python implementation of the classic Hangman game with additional features inc
 - colorama
 - pygame (for sound effects)
 
-Here's the properly formatted Markdown for the installation and running instructions:
-
-```markdown
 ## Installation
 
 ```bash
