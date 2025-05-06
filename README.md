@@ -36,8 +36,5 @@ python3 hangman.py
 Or if you're using just `python`:
 
 ```bash
-python hangman.py
-```
-
-Note: Make sure you're in the correct directory where the `hangman.py` file is located.
+python game.py
 ```
