@@ -1,37 +1,63 @@
-# Hangman Game
+# 🎮 Terminal Hangman Game
 
-A Python implementation of the classic Hangman game with additional features including difficulty levels, user statistics tracking, sound effects, and colored terminal output.
+A colorful, feature-rich Hangman game playable in the terminal. Supports multiple difficulty levels, user login/signup, persistent stats tracking, ASCII art, and sound effects!
 
-## Features
+---
 
-- **Multiple Difficulty Levels**: Choose from easy, intermediate, or hard word lists
-- **User Accounts**: Login system to track your game statistics
-- **Visual Feedback**: Color-coded hangman drawings that change based on remaining attempts
-- **Sound Effects**: Audio feedback for correct/incorrect guesses
-- **Statistics Tracking**: Records wins and losses per difficulty level
-- **Word Guessing**: Option to guess the full word at any time
-- **Cross-Platform**: Works on Windows, macOS, and Linux
+## 📜 Project Description
 
-## Requirements
+This is a terminal-based Hangman game built with Python. It includes:
 
-- Python 3.x
-- colorama
-- pygame (for sound effects)
+- 🧠 **Three difficulty levels**: Easy, Intermediate, and Hard — each with its own word list
+- 🧍 **User login/signup system** — with username and password
+- 📊 **Persistent stats tracking** — per user and difficulty level, stored in `stats.txt`
+- 🎨 **Colorful terminal output** — thanks to `colorama`
+- 🔊 **Sound effects** — for correct and incorrect guesses (optional)
+- 🔡 **Support for full word or letter guessing**
+- 🚫 **Handles corrupted or missing files**
 
-## Installation
+---
+
+## ▶️ How to Run the Game
+
+### 1. 🛠️ Install Requirements
+
+Make sure Python 3 is installed, then install the dependencies:
 
 ```bash
 pip install colorama pygame
-```
 
-## Run the Game
+2. 📂 Prepare Word Lists
 
-```bash
-python3 hangman.py
-```
+Create the following files (one word per line) in the project directory:
+	•	easy.txt
+	•	intermediate.txt
+	•	hard.txt
 
-Or if you're using just `python`:
+If these files are missing or empty, default words will be used.
 
-```bash
+3. 🔊 Add Optional Sound Files
+
+Place the following sound files in the same directory as game.py:
+	•	correct.wav — played when the user guesses correctly
+	•	wrong.mp3 — played when the user guesses incorrectly
+
+⚠️ If sound files are missing or cannot be loaded, the game will continue without sound.
+
+4. 🚀 Run the Game
+
+Run the game using:
+
 python game.py
-```
+
+⸻
+
+🌟 Features
+	•	✅ User login and signup system (username + password)
+	•	✅ Per-user stats saved in stats.txt (in JSON format)
+	•	✅ Supports 3 difficulty levels with custom word lists
+	•	✅ ASCII art hangman updated with each wrong guess
+	•	✅ Colored output for better visual feedback
+	•	✅ Sound effects for feedback (optional)
+	•	✅ Guess full word or one letter at a time
+	•	✅ Graceful handling of corrupted/missing files
